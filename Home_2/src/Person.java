@@ -14,7 +14,7 @@ public class Person {
 
     public boolean marry(Person person) {
 
-        if (man != person.man && person!=spouse) {
+        if (man != person.man && person != spouse) {
             divorce();
             person.divorce();
             spouse = person;

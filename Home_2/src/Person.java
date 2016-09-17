@@ -14,18 +14,12 @@ public class Person {
 
     public boolean marry(Person person) {
 
-        if (man != person.man ) {
-            if (spouse == null) {
-                spouse = person;
-                person.spouse = this;
-            } else {
-                divorce();
-                person.divorce();
-                spouse = person;
-                person.spouse = this;
-            }
+        if (man != person.man && person!=spouse) {
+            divorce();
+            person.divorce();
+            spouse = person;
+            person.spouse = this;
             return true;
-
         } else {
             return false;
         }

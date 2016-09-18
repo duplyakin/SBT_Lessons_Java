@@ -4,7 +4,7 @@
 public class Person {
     private final boolean man;
     private final String name;
-    public Person spouse;
+    private Person spouse;
 
 
     public Person(boolean man, String name) {
